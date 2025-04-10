@@ -9,10 +9,11 @@ import {Bus,Car,Garage} from './components/Vehicles'
 function App() {
   const [count, setCount] = useState(0)
   const myElement = <h1>Hello React!</h1>; // ele
+  const details = {firstName:'Daniel', lastName:'Shaqfeh', Age:'22'}
   return (
    <div className="app-container">
      {myElement} {/* Calling html ele */}
-     <Name/> {/* Calling the Fun component */}
+     <Name info={details}/> {/* Calling the Fun component */}
      <hr class="h-1 bg-gray-500 my-5" />
 
      <Garage/>
